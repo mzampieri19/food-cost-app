@@ -259,7 +259,7 @@ export default function HomeScreen() {
           >
             <IngredientForm onAddIngredient={addIngredient} onClose={closeModal} />
           </Modal>
-          
+          <Text style={styles.title}>Total Ingredients added: {ingredients.length}</Text>
           {/* {<ListIngredients ingredients={ingredients} />} */}
           
         </View>
@@ -280,6 +280,8 @@ export default function HomeScreen() {
               onClose={closeDishModal}
             />
           </Modal>
+          <Text style={styles.title}>Total Dishes added: {dishes.length}</Text>
+
           {/* {dishes && (
             <ListDishes dishes={dishes} />
           )} */}
